@@ -1,5 +1,5 @@
 import HeadComponent from './HeadComponent';
-import MenuComponent from './MenuComponent';
+
 class RootComponent extends React.Component{
 	constructor(props,context){
 		super(props,context)
@@ -8,15 +8,21 @@ class RootComponent extends React.Component{
 			
 		}
 	}
+	
+	
 	render(){
+		
 		return (
 			<div>
 				<HeadComponent/>
 				
-				<MenuComponent/>
+				
+				
 			</div>
 		)
 	}
+	
+	
 	
 };
 
