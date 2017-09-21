@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  font-size: 14px; }
+
+#app {
+  height: 100%;
+  width: 100%; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+li {
+  list-style: none; }
+
+button {
+  outline: none;
+  line-height: 0.3rem; }
+
+.menu {
+  width: 100%; }
+  .menu .menu__information {
+    font-size: 16px;
+    width: 100%;
+    padding: 0.225rem 0.225rem 0.1rem 0.225rem; }
+  .menu .menu__info-ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0.225rem 0.15rem 0.225rem;
+    border-bottom: 1px solid #f0f0f0; }
+    .menu .menu__info-ul li {
+      height: 0.3rem;
+      width: 33.3%;
+      line-height: 0.3rem; }
+    .menu .menu__info-ul li:nth-child(3n+1) {
+      text-align: left; }
+    .menu .menu__info-ul li:nth-child(3n-1) {
+      text-align: center; }
+    .menu .menu__info-ul li:nth-child(3n) {
+      text-align: right; }
+  .menu .menu__nav-ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 0.225rem; }
+    .menu .menu__nav-ul li {
+      font-size: 0.16rem;
+      height: 0.4rem;
+      line-height: 0.4rem; }
+      .menu .menu__nav-ul li a {
+        color: black; }
+  .menu .menu__join {
+    width: 100%;
+    height: 0.68rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.225rem;
+    border-bottom: 5px solid #f4f4f4;
+    border-top: 5px solid #f4f4f4; }
+    .menu .menu__join i {
+      display: inline-block; }
+    .menu .menu__join .menu__join__left {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      font-size: 0.16rem;
+      color: #8d8d8d; }
+      .menu .menu__join .menu__join__left .icon-png1 {
+        margin-right: 10px;
+        width: 0.86rem;
+        height: 0.28rem;
+        background: url(5d019a4d542ce736360e27cc3f530388.png) no-repeat;
+        background-position: 0 -74px;
+        background-size: 1.5rem 1.5rem; }
+    .menu .menu__join .menu__join__right {
+      display: flex;
+      height: 100%;
+      align-items: center; }
+      .menu .menu__join .menu__join__right .icon-png2 {
+        width: 0.14rem;
+        height: 0.14rem;
+        background: url(5d019a4d542ce736360e27cc3f530388.png) no-repeat;
+        background-position: 4px -3px;
+        background-size: 1.5rem 1.5rem; }
+  .menu .menu__login {
+    width: 100%;
+    height: 0.65rem;
+    text-align: center; }
+    .menu .menu__login a {
+      display: inline-block;
+      width: 1.5rem;
+      height: 0.4rem;
+      border: 1px solid orangered;
+      text-align: center;
+      line-height: 0.4rem;
+      border-radius: 5px;
+      margin-top: 0.25rem; }
+    .menu .menu__login .loginBtn {
+      color: orangered;
+      background: white;
+      margin-right: 0.2rem; }
+    .menu .menu__login .regisBtn {
+      color: white;
+      background: orangered; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+.headCommon .head {
+  height: 0.56rem;
+  box-shadow: 0 2px 4px rgba(48, 48, 48, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px; }
+  .headCommon .head .head__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .headCommon .head .head__left .head__left__logo {
+      margin-right: 15px; }
+      .headCommon .head .head__left .head__left__logo img {
+        width: 36px;
+        height: 36px;
+        display: block; }
+    .headCommon .head .head__left .head__left__text {
+      color: #606060; }
+  .headCommon .head .head__right {
+    width: 84px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid red;
+    text-align: center;
+    line-height: 28px;
+    color: red; }
+
+.headCommon .top-bar {
+  margin-top: 3px;
+  width: 100%;
+  height: 0.45rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: 1px solid #f0f0f0; }
+  .headCommon .top-bar .top-bar__nav {
+    font-size: 0.3rem !important;
+    text-align: center;
+    background: white;
+    border: none;
+    width: 0.3rem;
+    height: 0.3rem; }
+  .headCommon .top-bar .top-bar__title {
+    width: 0.4rem;
+    height: 0.3rem; }
+    .headCommon .top-bar .top-bar__title img {
+      width: 100%;
+      height: 100%; }
+  .headCommon .top-bar .top-bar__search {
+    font-size: 0.2rem;
+    font-weight: bold; }
