@@ -1,0 +1,30 @@
+
+
+h1,h3{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+html,body,#app{
+    height: 100%;
+    position: relative;
+}
+body{
+    font-size: 14px;
+    margin: 0;padding: 0;
+}
+.full-height{
+    height: 100%;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td {
+    margin:0; padding:0;
+    box-sizing: border-box;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+

@@ -19,6 +19,16 @@ module.exports = {
                 target:'https://m.toutiao.com',
                 changeOrigin:true,
                 pathRewrite: {'^/api' : ''}
+            },
+            '/ele':{
+                target:'https://restapi.ele.me',
+                changeOrigin:true,
+                pathRewrite: {'^/ele' : ''}
+            },
+            '/article':{
+                target:'https://m.huxiu.com',
+                changeOrigin:true,
+                pathRewrite: {'^/article' : ''}
             }
         },
 		contentBase:'./build',//服务器要在哪个地方开启，默认是在webpack.config.js的路径中
@@ -80,7 +90,8 @@ module.exports = {
             },
             {   test: /\.(png|jpg|jpeg|gif)$/,  
                 loader: 'url-loader?limit=8192'  
-            } 
+            }
+            
 
         ]
     }

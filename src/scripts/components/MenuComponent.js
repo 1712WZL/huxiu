@@ -1,3 +1,5 @@
+
+import {Link} from 'react-router'
 class MenuComponent extends React.Component{
 	constructor(props,context){
 		super(props,context)
@@ -36,10 +38,10 @@ class MenuComponent extends React.Component{
 		        </li>
 		        <li>
 		            
-		            <a href="">活动</a>
+		            <Link to="/active">活动</Link>
 		        </li>
 		        <li>
-		        	<a href="">创业板</a>
+		        	<Link to="/chuangye">创业板</Link>
                 </li>
 		    </ul>
 		    <div className="menu__join">

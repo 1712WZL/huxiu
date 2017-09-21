@@ -1,25 +1,31 @@
-import HeadComponent from './HeadComponent';
-import MenuComponent from './MenuComponent';
-class RootComponent extends React.Component{
-	constructor(props,context){
-		super(props,context)
-		
-		this.state={
-			
-		}
-	}
-	render(){
-		return (
-			<div>
-				<HeadComponent/>
-				
-				<MenuComponent/>
-			</div>
-		)
-	}
-	
-};
-
-export default RootComponent;
 
 
+
+class RootComponent extends React.Component {   
+    constructor(props,context){
+        super(props,context)
+
+        this.state={
+          
+        }
+    }
+    componentWillMount(){
+        
+    }
+    render(){
+        console.log(this)
+        return (
+            <div className="full-height">
+            	{this.props.children}
+            </div>
+        )
+    }
+}
+//定义默认属性
+RootComponent.defaultProps={
+
+}
+
+
+
+export default RootComponent

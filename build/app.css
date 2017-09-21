@@ -1,3 +1,31 @@
+h1, h3 {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+html, body, #app {
+  height: 100%;
+  position: relative; }
+
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0; }
+
+.full-height {
+  height: 100%; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, table, th, td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
 * {
   margin: 0;
   padding: 0;
@@ -78,7 +106,6 @@ button {
         margin-right: 10px;
         width: 0.86rem;
         height: 0.28rem;
-        background: url(5d019a4d542ce736360e27cc3f530388.png) no-repeat;
         background-position: 0 -74px;
         background-size: 1.5rem 1.5rem; }
     .menu .menu__join .menu__join__right {
@@ -88,7 +115,6 @@ button {
       .menu .menu__join .menu__join__right .icon-png2 {
         width: 0.14rem;
         height: 0.14rem;
-        background: url(5d019a4d542ce736360e27cc3f530388.png) no-repeat;
         background-position: 4px -3px;
         background-size: 1.5rem 1.5rem; }
   .menu .menu__login {
@@ -169,3 +195,23 @@ html, body {
   .headCommon .top-bar .top-bar__search {
     font-size: 0.2rem;
     font-weight: bold; }
+
+footer {
+  height: 1.5rem;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  color: #bbb; }
+  footer ul {
+    padding: 0.48rem 0 0.1rem 0;
+    display: inline-block;
+    overflow: hidden; }
+    footer ul li {
+      width: 0.7rem;
+      float: left;
+      line-height: 0.2rem;
+      border-right: 1px solid #bbb; }
+    footer ul li:last-child {
+      border: none; }
+  footer .copyright-box {
+    font-size: 0.12rem; }
