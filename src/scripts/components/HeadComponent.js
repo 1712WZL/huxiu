@@ -1,22 +1,24 @@
-import MenuComponent from './MenuComponent';
+import store from '../redux/store'
+import actions from '../redux/actions'
+import IndexContentComponent from './IndexContentComponent';
 class HeadComponent extends React.Component{
 	constructor(props,context){
 		
 		super(props,context)
 		
 		this.state={
-			isClick:false
+			isClick:store.getState().isClick
 		}
 		
 	}
-	changeIsClick(){
-		this.setState({
-			isClick:!this.state.isClick
-		})
-	}
+//	changeIsClick(){
+//		this.setState({
+//			isClick:!this.state.isClick
+//		})
+//	}
 	render(){
-		console.log(this.state)
 		let style1={fontSize:'0.2rem'}
+		
 		return (
 			<div className="headCommon">
 				<div className="head">
@@ -31,7 +33,7 @@ class HeadComponent extends React.Component{
     				
     			</div>
     			<div className="top-bar">
-    				<button className="top-bar__nav" onClick={this.changeIsClick.bind(this)}>
+    				<button className="top-bar__nav" onClick={actions.changeClick}>
     					{this.state.isClick?<i className="iconfont" style={style1}>&#xe604;</i>:<i className="iconfont">&#xe637;</i>}
     					
     				</button>
@@ -42,11 +44,17 @@ class HeadComponent extends React.Component{
     					<i className="iconfont">&#xe609;</i>
     				</div>
     			</div>
-    			{this.state.isClick?<MenuComponent/>:""}
-    			
 			</div>
 			
 		)
+	}
+	componentDidMount(){
+		let that = this
+		store.subscribe(()=>{
+			that.setState({
+				isClick:store.getState().isClick
+			})
+		})
 	}
 }
 

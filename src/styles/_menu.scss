@@ -1,6 +1,4 @@
 .menu{
-    width: 100%;
-    
     .menu__information{
         font-size: 16px;
         width: 100%;
@@ -16,6 +14,9 @@
             height: 0.3rem;
             width: 33.3%;
             line-height: 0.3rem;
+            .active{
+                color:#3ca5f6;
+            }
         }
         li:nth-child(3n+1){
             text-align: left;
@@ -62,7 +63,7 @@
                width: 0.86rem;
                height: 0.28rem;
                background: url(../../build/imgs/icon2.png) no-repeat;
-               background-position: 0 -74px;
+               background-position: 0 -0.74rem;
                background-size: 1.5rem 1.5rem;
             };
         }
@@ -81,7 +82,7 @@
         }
         
      }
-     .menu__login{
+     .menu__login,.user__panel{
          width: 100%;
          height: 0.65rem;
          text-align: center;
@@ -94,15 +95,31 @@
              line-height: 0.4rem;
              border-radius: 5px;
              margin-top: 0.25rem;
+             overflow: hidden;
          }
          .loginBtn{
              color: orangered;
              background: white;
              margin-right: 0.2rem;
          }
-         .regisBtn{
+         .regisBtn,.user__exit{
              color: white;
              background:orangered;
+         }
+     }
+     .user__panel{
+         .user__info{
+             margin-right: 0.2rem;
+             border: 1px solid #ff6060;
+             background:#ff6060;
+             color: #fff;
+             text-align: center;
+             span{
+                 overflow: hidden;
+                 display: inline-block;
+                 width: 1.2rem;
+                 word-break: break-all;
+             }
          }
      }
 }

@@ -1,37 +1,46 @@
 
-import BannerComponent from "./BannerComponent"
-import FooterComponent from "./FooterComponent"
 import HeadComponent from "./HeadComponent"
-import GetArticleComponent from "./GetArticleComponent"
+import MenuComponent from "./MenuComponent"
+import IndexContentComponent from "./IndexContentComponent"
+import store from '../redux/store'
+import actions from '../redux/actions'
 
-class RootComponent extends React.Component {   
+class IndexComponent extends React.Component {   
     constructor(props,context){
         super(props,context)
 
         this.state={
-          
+          isClick:store.getState().isClick,
+          userInfo:store.getState().userInfo
         }
     }
     componentWillMount(){
         
     }
     render(){
-        console.log(this)
         return (
             <div className="full-height">
+            {console.log(this.state.userInfo)}
             	<HeadComponent/>
-            	<BannerComponent/>
-               	<FooterComponent/>
-                <GetArticleComponent/>
+    			{this.state.isClick?<MenuComponent/>:<IndexContentComponent/>}
+            	
             </div>
         )
     }
+    componentDidMount(){
+    	let that = this
+    	store.subscribe(()=>{
+    		that.setState({
+    			isClick:store.getState().isClick
+    		})
+    	})
+    }
 }
 //定义默认属性
-RootComponent.defaultProps={
+IndexComponent.defaultProps={
 
 }
 
 
 
-export default RootComponent
+export default IndexComponent

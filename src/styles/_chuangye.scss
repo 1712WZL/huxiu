@@ -1,0 +1,232 @@
+
+//topwrap
+
+.topwrap{
+   
+    width: 100%;
+    
+    z-index: 2;
+    .top{
+        height:.38rem;
+        background-color: #4c4c4c;
+        color: #fff;
+        box-shadow: 0 1px 8px rgba(167, 167, 167, 0.9);
+        position: relative;
+        .logo-box{
+                position:absolute;
+                z-index: 6;
+                left: 10px;
+                font-size: 20px;
+                cursor: pointer;
+                height: 32px; 
+                text-indent: -9999px;
+                display: inline-block;
+                width: 50px;
+                background:url(https://m.huxiu.com/static/images/logo.png) no-repeat center 6px;
+            background-size: .37rem;
+        }
+    }
+}
+
+
+//banner
+.banner1{
+        height: 210.938px;
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    min-height: 180px;
+    
+    .banner_bg{
+        position: absolute;
+        bottom: 0;
+        background-color: #000;
+        height: 30px;
+        filter: Alpha(Opacity=30);
+        opacity: 0.3;
+        z-index: 2;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    .swiper-pagination{
+        position: absolute;
+    list-style-type: none;
+    filter: Alpha(Opacity=80);
+    opacity: 0.8;
+    z-index: 1002;
+    margin: 0;
+    padding: 0;
+    bottom: 8px;
+    right: 12px;
+    height: 10px;
+    
+    .swiper-pagination-bullet{
+        float: left;
+        margin-right: 5px;
+        width: 8px;
+        height: 8px;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        
+        cursor: pointer;
+        opacity: 1;
+        
+    }
+    .swiper-pagination-bullet-active{
+            background: #fff;
+        }
+    
+    }
+}
+ 
+.banner_list a{
+    display: block;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    z-index: -5;
+    img{
+        width: 100%;
+    }
+    p{
+        
+        height: .3rem;
+        line-height: .3rem;
+        position: absolute;
+        bottom: 0;
+        left: .12rem;
+        color:#fff;
+        font-size: .1rem;
+    }
+}
+
+//navwrap
+
+.navwrap{
+    height: .4rem;
+    background-color: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+    ul li{
+       padding-top: .11rem;
+    font-size: .12rem;
+    height: .4rem;
+    line-height: .2rem;
+    width: 25%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+        span{
+            display: inherit;
+            border-right: 1px solid #f0f0f0;
+            .icon-cy {
+                display: inline-block;
+                vertical-align: text-bottom;
+                background-image: url("https://m.huxiu.com/static//images/icon-cy.png");
+                background-repeat: no-repeat;
+                width: 0.15rem;
+                height: 0.15rem;
+                background-size: 1.5rem 1.5rem;
+                cursor: pointer;
+                background-position: -0.02rem 0.04rem;
+            }
+            .active{
+                background-position: -0.22rem 0.04rem;
+            }
+        }
+    }
+}
+
+//cy-tag-wrap
+.cy-tag-wrap{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.48);
+    width: 100%;
+    height: 100%;
+    
+    z-index: 1;
+    .cy-tag-list{
+        height: 2rem;
+        overflow: auto;
+        background: #fff;
+        padding: .2rem .2rem 0 .2rem;
+//      transform: rotateY(90deg);
+//      transition: all 0.5s;
+    }
+    ul li{
+        width: 91px;
+       border: 1px solid #f0f0f0;
+        float: left;
+        
+        margin-right: .2rem;
+        margin-bottom: .2rem;
+        text-align: center;
+        font-size: .1rem;
+        height: .25rem;
+        line-height: .25rem;
+        cursor: pointer;
+        
+    }
+    .active{
+        color: #fff;
+        background-color: #3ca5f6;
+        border-color: #3ca5f6;
+    }
+}
+
+//cplist
+.cp-list{
+    background-color: #fff;
+    padding: .12rem .12rem 0 .12rem;
+    min-height: 2.07rem;
+    overflow: auto;
+    
+    
+    .cp-info{
+        padding: .15rem 0;
+        border-bottom: 1px solid #f0f0f0;
+        .cp-logo{
+            width: .61rem;
+            height: .61rem;
+            float: left;
+            overflow: hidden;
+            margin-right: .1rem;
+            img{
+                width: 100%;
+                display: block;
+                border: none;
+            }
+        }
+        .cp-name{
+            font-size: .14rem;
+            color: #333;
+            a{
+                color: #000;
+            }
+        }
+        .cp-tj-time{
+            font-size: .1rem;
+            color: #999;
+            margin-left:.71rem;
+        }
+        .cp-intro{
+            font-size: .1rem;
+            color: #999;
+            margin-left:.71rem;
+        }
+    }
+}
+
+//加载更多
+
+    
+.btn-getmore{
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    background-color: #fff;
+    font-size: .12rem;
+    height: .4rem;
+    display: block;
+    line-height: .4rem;
+    outline: none;
+}

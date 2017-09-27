@@ -1,0 +1,106 @@
+.login{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.39rem;
+    .login__title{
+        width: 100%;
+        text-align: center;
+        padding-top: 0.29rem;
+        font-size: 0.22rem;
+        position: relative;
+        a{font-weight: normal;font-size: 0.15rem;position: absolute;right: 0;bottom: 0;}
+    }
+    .login__input{
+        border: none;
+        width: 100%;
+        height: 0.35rem;
+        border-bottom: 1px solid #ddd;
+        margin-top: .15rem;
+        outline: 0;
+        font-size: .15rem;
+        color: #1d1d1d;
+    }
+    .login__userPwd{position: relative;}
+    .canSee{
+        display: inline-block;
+        width: 0.4rem;
+        height: 0.4rem;
+        padding-top: 0.08rem;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        i{display: inline-block;width: 0.2rem;height: 0.2rem;position: absolute;
+            background:url(/imgs/icon_login.png) no-repeat;
+                background-size: 2rem 2rem;
+                    background-position: 0 .046rem;
+            right: 0;
+        }
+        
+    }
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKit*/  
+        color:    #bbb;  
+    }  
+    input:-moz-placeholder, textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */  
+        color:   #bbb;  
+    }  
+    input::-moz-placeholder, textarea::-moz-placeholder { /* Mozilla Firefox 19+ */  
+        color:    #bbb;  
+    }  
+    input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* IE 10+ */  
+        color:    #bbb;  
+    } 
+    .login__userName{
+        margin-top: 0.54rem;
+        
+    }
+    .forgetPwd{text-align: right;padding:0.2rem 0;}
+    .login__loginDiv{
+        text-align: center;
+        .loginBtn{
+            display: inline-block;
+            width: 2.97rem;
+            height: 0.45rem;
+            text-align: center;
+            background: black;
+            color: white;
+            line-height: 0.45rem;
+            border: none;
+            border-radius: 0.05rem;
+            font-size: 0.17rem;
+        }    
+    }
+    .login__fastMes{
+        text-align: center;
+        margin-top: 0.2rem;
+        a{
+           color: #333; 
+        }
+        
+    }
+    .login__loginMethods{
+        width: 100%;
+        text-align: center;
+        height: 0.53rem;
+        margin-top: 0.65rem;
+        span{
+            display: inline-block;
+            width: 0.52rem;
+            height: 0.52rem;
+        }
+        .login__loginMethods__qq{
+            
+            background: url(/imgs/icon_login.png) no-repeat;
+            background-size: 2rem 2rem;
+            background-position: -0.35rem 0;
+            margin-right: 0.24rem;
+        }
+        .login__loginMethods__weichat{
+            
+            background: url(/imgs/icon_login.png) no-repeat;
+            background-size: 2rem 2rem;
+            background-position: -1.44rem 0;
+        }
+    }
+    
+}
